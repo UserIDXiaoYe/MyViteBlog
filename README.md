@@ -1,2 +1,4 @@
 # MyVueBlog
-学习制作一个Blog网站 使用VuePress和TaiwindCSS
+vercel部署 
+更新后执行命令本地部署:
+```vercel```
