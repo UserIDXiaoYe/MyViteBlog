@@ -1,49 +1,49 @@
 {
-  "hash": "784d1b33",
-  "configHash": "44a7afb7",
-  "lockfileHash": "05957a16",
-  "browserHash": "241a6fa0",
+  "hash": "e64e3fca",
+  "configHash": "c62a56c5",
+  "lockfileHash": "f8c2b027",
+  "browserHash": "c3dcf625",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "2f6c1b26",
+      "fileHash": "ccf2b840",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "845faa4e",
+      "fileHash": "c8f0cf48",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "92606c00",
+      "fileHash": "84b5d797",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "041632a7",
+      "fileHash": "0ced1ec5",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "d5dd3256",
+      "fileHash": "5746eaac",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "f6548adf",
+      "fileHash": "c58226d2",
       "needsInterop": false
     },
-    "@theme/index": {
-      "src": "../../../../node_modules/vitepress/dist/client/theme-default/index.js",
-      "file": "@theme_index.js",
-      "fileHash": "03366515",
+    "@giscus/vue": {
+      "src": "../../../../node_modules/@giscus/vue/dist/index.js",
+      "file": "@giscus_vue.js",
+      "fileHash": "53b8a36f",
       "needsInterop": false
     }
   },
@@ -53,6 +53,9 @@
     },
     "chunk-LW4I4DCF": {
       "file": "chunk-LW4I4DCF.js"
+    },
+    "giscus-Ci9LqPcC-OV6IBXWV": {
+      "file": "giscus-Ci9LqPcC-OV6IBXWV.js"
     }
   }
 }

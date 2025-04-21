@@ -1,12 +1,10 @@
 import { defineConfig } from 'vitepress'
 import nav from './nav.mjs'
 import sidebar from './sidebar.mjs'
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "XIAOYE-Blog",
   description: "学习笔记",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: '/favicon.ico',
     nav:nav,
     sidebar: sidebar,
