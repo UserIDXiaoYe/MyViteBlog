@@ -1,6 +1,7 @@
 <!-- Layout.vue -->
 <template>
   <DefaultTheme.Layout>
+    <h2>test</h2>
     <template #doc-after>
       <div style="margin-top: 24px">
         <giscus src="https://giscus.app/client.js"
@@ -8,7 +9,7 @@
             data-repo-id="R_kgDOOYqXBA"
             data-category="General"
             data-category-id="DIC_kwDOOYqXBM4CpUAn"
-            data-mapping="pathname"
+            data-mapping="url"
             data-strict="0"
             data-reactions-enabled="1"
             data-emit-metadata="0"
