@@ -9,7 +9,7 @@
             data-repo-id="R_kgDOOYqXBA"
             data-category="General"
             data-category-id="DIC_kwDOOYqXBM4CpUAn"
-            data-mapping="url"
+            data-mapping="pathname"
             data-strict="0"
             data-reactions-enabled="1"
             data-emit-metadata="0"
