@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端开发工程师简历</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #42b983;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--secondary-color);
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 1rem;
+            margin: 2rem 0;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            flex: 1 1 300px;
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .project-item {
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .skill-card {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>前端开发工程师</h1>
+        <p>xxx@email.com | 138-xxxx-xxxx</p>
+    </header>
+
+    <section>
+        <h2 class="section-title">技术能力</h2>
+        <div class="skill-list">
+            <div class="skill-card">
+                <h3>Vue生态</h3>
+                <ul>
+                    <li>熟悉Vue3组合式API开发，掌握Vue Router/Pinia状态管理</li>
+                    <li>熟练使用VitePress构建技术文档/博客类静态站点:cite[2]:cite[6]</li>
+                    <li>了解Vite构建工具配置及插件开发</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>构建工具</h3>
+                <ul>
+                    <li>熟练配置VitePress主题与Markdown扩展功能</li>
+                    <li>掌握Vite项目优化策略（代码分割/预加载）</li>
+                    <li>了解Rollup插件开发与打包配置</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">项目经历</h2>
+
+        <div class="project-item">
+            <h3>VitePress技术博客系统（2024.11-2025.01）</h3>
+            <ul>
+                <li>基于VitePress + Vue3构建支持暗黑模式的技术博客</li>
+                <li>实现Markdown与Vue组件混合开发，集成DocSearch全文搜索功能:cite[5]</li>
+                <li>配置GitHub Actions自动化部署到Cloudflare Pages:cite[5]:cite[8]</li>
+                <li>开发自定义主题组件，实现文章统计与标签分类系统</li>
+                <li>集成Giscus评论系统，支持GitHub账号登录互动:cite[5]</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <h3>Vue3网页照片墙应用（2023.06-2023.09）</h3>
+            <ul>
+                <li>采用Vue3 + Pinia + TypeScript技术栈</li>
+                <li>实现用户照片上传、留言及内容管理功能</li>
+                <li>集成axios处理REST API请求</li>
+                <li>使用Vite进行项目构建和打包优化</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.section-title').forEach(title => {
+            title.addEventListener('click', function () {
+                this.nextElementSibling.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简历</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #42b983;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--secondary-color);
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 1rem;
+            margin: 2rem 0;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            flex: 1 1 300px;
+            background: #f8f9fa;
+            padding: 0;
+            padding-left: 10px;
+            border-radius: 8px;
+        }
+
+        .project-item {
+            margin-bottom: 2rem;
+            background: #f8f9fa;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .skill-card {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h3>赵佳豪</h3>
+        <p>a1812141134@163.com | 151-3039-5339</p>
+    </header>
+
+    <section>
+        <h3 class="section-title">技术能力</h3>
+
+        <div class="skill-list">
+            <div class="skill-card">
+                <h4>HTML/CSS</h4>
+                <ul>
+                    <li>熟练使用语义化标签构建页面结构</li>
+                    <li>精通Flex布局与响应式设计</li>
+                    <li>熟练使用Sass/LESS预处理器</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h4>JavaScript</h4>
+                <ul>
+                    <li>掌握ES6+语法及核心概念</li>
+                    <li>熟悉DOM操作与事件处理机制</li>
+                    <li>了解原型链与面向对象编程</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h4>Vue生态</h4>
+                <ul>
+                    <li>熟悉Vue3组合式API开发</li>
+                    <li>掌握Vue Router/Pinia状态管理</li>
+                    <li>了解Vite构建工具配置</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h4>工具</h3>
+                    <ul>
+                        <li>版本控制：Git + GitHub</li>
+                        <li>包管理：npm/pnpm</li>
+                        <li>构建工具：Vite/Rollup</li>
+                        <li>代码规范：ESLint + Prettier</li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">项目经历</h3>
+        <div class="project-item">
+            <h4>VitePress技术博客系统（2025.1-至今）</h4>
+            <ul>
+                <li>基于VitePress + Vue3构建技术博客</li>
+                <li>实现Markdown与Vue组件混合开发</li>
+                <li>配置GitHub Actions自动化部署到vercel</li>
+                <li>开发自定义主题组件，实现文章统计与标签分类系统</li>
+                <li>集成Giscus评论系统，支持GitHub账号登录互动</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <h4>Vue3 网页照片墙应用（2025.03-至今）</h4>
+            <ul>
+                <li>采用Vue3 + nodejs +mysql技术栈</li>
+                <li>实现用户照片上传、留言及内容管理功能</li>
+                <li>集成axios处理REST API请求</li>
+                <li>使用Vite进行项目构建和打包优化</li>
+                <li>实现响应式布局适配多端设备</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
