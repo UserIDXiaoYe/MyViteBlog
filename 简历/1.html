@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>简历</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
         :root {
             --primary-color: #2c3e50;
             --secondary-color: #42b983;
@@ -19,10 +25,68 @@
             padding: 20px;
         }
 
-        .header {
-            text-align: center;
-            padding: 2rem 0;
+        /* 修改头部样式 */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+            padding: 1.5rem 0;
             border-bottom: 1px solid var(--primary-color);
+        }
+
+        /* 左侧信息容器 */
+        .header {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* 右侧logo容器 */
+        .logo {
+            flex-shrink: 0;
+            width: 200px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .head {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header {
+                order: 2;
+                text-align: center;
+                align-items: center;
+            }
+
+            .logo {
+                order: 1;
+                width: 150px;
+            }
+
+            .header>p:nth-child(2) {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
         }
 
         .section-title {
@@ -67,11 +131,18 @@
 </head>
 
 <body>
-    <header class="header">
-        <h3>赵佳豪</h3>
-        <p>a1812141134@163.com | 151-3039-5339</p>
-    </header>
-
+    <div class="head">
+        <header class="header">
+            <p class="name"><strong>赵佳豪</strong></p>
+            <p>学历：本科（2026届，软件工程）</p>
+            <p>学校：长安大学</p>
+            <p>邮箱：a1812141134@163.com </p>
+            <p>电话：151-3039-5339</p>
+        </header>
+        <div class="logo">
+            <img src="../docs/public/Mylogo2.jpg" style="height: 200px;">
+        </div>
+    </div>
     <section>
         <h3 class="section-title">技术能力</h3>
 
@@ -106,10 +177,10 @@
             <div class="skill-card">
                 <h4>工具</h3>
                     <ul>
-                        <li>版本控制：Git + GitHub</li>
-                        <li>包管理：npm/pnpm</li>
-                        <li>构建工具：Vite/Rollup</li>
-                        <li>代码规范：ESLint + Prettier</li>
+                        <li>熟悉Git+GitHub版本控制</li>
+                        <li>掌握npm、pnpm等包管理工具</li>
+                        <li>了解Vite等构建工具</li>
+                        <li>代码遵循ESLint规范</li>
                     </ul>
             </div>
         </div>
