@@ -23,7 +23,7 @@ const pinia = createPinia()
 app.use(pinia)
 ```
 
-2. pinia使用——存储数据
+2. pinia使用——存储数据（相当于data）
 
 创建store文件夹、创建ts文件存放数据
 
@@ -70,7 +70,7 @@ function add(){
 }
 ```
 
-使用action方法，对应的store里面要定义action
+使用action方法，对应的store里面要定义action（相当于method）
 
 ```javascript
 //新增action
@@ -89,3 +89,20 @@ export const useCountStore = defineStore('count',{
     }
 })
 ```
+4. pinia使用——getters（相当于computed）
+
+```javascript
+getters:{
+    bigSum(state){
+        return state.sum * 10
+    },
+    //写成箭头函数
+    bigSum:state => state.sum * 10,
+    //使用this时，不能写成箭头函数
+    upperSchool():string{
+        return this.school.toUpperCase()
+    }
+}
+
+```
+getters里面this指向$state属性
