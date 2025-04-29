@@ -1,7 +1,5 @@
 # JavaScript数组方法
 
-参考自CSDN：[青松pine](https://blog.csdn.net/qq_43223007)：[JavaScript中的数组方法总结+详解](https://blog.csdn.net/qq_43223007/article/details/110201463)
-
 ## 数组方法总结：
 
 | 顺序 | 方法名        | 功能                                                         | 返回值                                             | 是否改变原数组 | 版本 |
@@ -34,7 +32,10 @@
 | 26   | fill()        | 用给定值填充一个数组                                         | 新数组                                             | Y              | ES6  |
 | 27   | flat()        | 用于将嵌套的数组“拉平”，变成一维的数组。                     | 返回一个新数组                                     | N              | ES6  |
 | 28   | flatMap()     | flat()和map()的组合版 , 先通过map()返回一个新数组,再将数组拉平( 只能拉平一次 ) | 返回新数组                                         | N              | ES6  |
+----
+
 ## 数组方法详解
+
 1. **Arr.push() ：在数组最后一位添加一个或多个元素,并返回新数组的长度,改变原数组.(添加多个元素用逗号隔开)**
 
 ```        javascript
@@ -459,3 +460,6 @@ flatMap方法: [
   88, 3, 99, 4, 100, 5
 ]
 ```
+----
+
+参考自CSDN：[青松pine](https://blog.csdn.net/qq_43223007)：[JavaScript中的数组方法总结+详解](https://blog.csdn.net/qq_43223007/article/details/110201463)

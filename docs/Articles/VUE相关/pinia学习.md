@@ -1,6 +1,6 @@
 # pinia学习记录
 
-## pinia引入
+## Pinia引入
 
 1. 使用包管理器下载pinia
 
@@ -23,7 +23,9 @@ const pinia = createPinia()
 app.use(pinia)
 ```
 
-2. pinia使用——存储数据（相当于data）
+## Pinia使用
+
+1. pinia使用——存储数据（相当于data）
 
 创建store文件夹、创建ts文件存放数据
 
@@ -51,7 +53,7 @@ const countStore = useCountStore()
 console.log(countStore.sum);//6
 ```
 
-3. pinia使用——修改数据
+2. pinia使用——修改数据
 
 pinia是“符合直觉的”状态管理库，拿到的数据可以直接修改，pinia也提供$patch批量修改，也可以借助action封装方法
 
@@ -70,7 +72,7 @@ function add(){
 }
 ```
 
-使用action方法，对应的store里面要定义action（相当于method）
+使用action方法，对应的store里面要定义action（相当于methods）
 
 ```javascript
 //新增action
@@ -89,7 +91,7 @@ export const useCountStore = defineStore('count',{
     }
 })
 ```
-4. pinia使用——getters（相当于computed）
+3. pinia使用——getters（相当于computed）
 
 ```javascript
 getters:{
@@ -106,3 +108,7 @@ getters:{
 
 ```
 getters里面this指向$state属性
+
+## 总结
+
+store相当于data，actions相当于methods，getters相当于computed

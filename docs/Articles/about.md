@@ -1,7 +1,10 @@
-## about
+# XIAOYE
 
-XIAOYE 
-<hr>
+----
+
+在心气耗光之前，向着顶峰前进
+
+----
 
 ## 前端
 <img src="https://img.shields.io/badge/JavaScript-javascript?logo=JavaScript&color=%23949494" style="display:inline-block"></img>&nbsp; 

@@ -4,6 +4,8 @@ export default[
         items: [
           { text: '事件循环', link: '/Articles/前端复习/事件循环' },
           { text: 'js数组方法', link: '/Articles/前端复习/js数组方法' },
+          { text: 'flex布局详解', link: '/Articles/前端复习/flex布局详解' },
+
         ]
       },
       {
