@@ -1,4 +1,4 @@
-<!-- Layout.vue -->
+<!-- Layout.vue 实际上没用上-->
 <template>
   <DefaultTheme.Layout>
     <h2>test</h2>
