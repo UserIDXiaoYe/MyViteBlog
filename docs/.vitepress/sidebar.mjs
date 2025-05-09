@@ -6,6 +6,7 @@ export default[
           { text: 'js数组方法', link: '/Articles/前端复习/js数组方法' },
           { text: 'flex布局详解', link: '/Articles/前端复习/flex布局详解' },
           { text: 'Promise学习', link: '/Articles/前端复习/Promise学习' },
+          { text: 'CSS属性大收集', link: '/Articles/前端复习/CSS属性大收集' },
         ]
       },
       {
