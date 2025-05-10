@@ -12,6 +12,10 @@
             /* box-sizing: border-box; */
         }
 
+        li {
+            padding-bottom: 4px;
+        }
+
         :root {
             --primary-color: #2c3e50;
             --secondary-color: #42b983;
@@ -64,7 +68,7 @@
         }
 
         .logo img {
-            margin-top: 44px;
+            margin-top: 60px;
             width: 100%;
             height: auto;
             border-radius: 8px;
@@ -107,6 +111,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 1.5rem;
+            padding-left: 20px;
         }
 
         .skill-card {
@@ -120,9 +125,13 @@
         .project-item {
             margin-bottom: 2rem;
             background: #f8f9fa;
-            padding-left: 10px;
+            padding-left: 30px;
             padding-top: 5px;
             padding-bottom: 5px;
+        }
+
+        .project-content {
+            margin-top: 20px;
         }
 
         @media (max-width: 768px) {
@@ -145,6 +154,7 @@
             <p>学校：长安大学</p>
             <p>邮箱：a1812141134@163.com </p>
             <p>电话：151-3039-5339</p>
+            <p>英语能力：CET-6</p>
             <p>网站：xiaoye.website</p>
         </header>
         <div class="logo">
@@ -152,44 +162,26 @@
         </div>
     </div>
     <section>
+        <h3 class="section-title">主修课程</h3>
+        <div class="skill-list">
+            <div class="skill-card">
+                计算机网络、数据结构、数据库原理与应用、面向对象程序设计、线性代数、概率论、计算机组成原理、软件体系设计
+            </div>
+        </div>
+    </section>
+    <section>
         <h3 class="section-title">技术能力</h3>
 
         <div class="skill-list">
             <div class="skill-card">
-                <h4>HTML/CSS</h4>
                 <ul>
-                    <li>熟练使用语义化标签构建页面结构</li>
-                    <li>精通Flex布局与响应式设计</li>
-                    <li>熟练使用Sass/LESS预处理器</li>
+                    <li>精通 HTML5、CSS3、ES6 + 等前端核心技术，熟练运用 Sass/Less 等 CSS 预处理器进行样式开发，具备高效搭建响应式、跨浏览器兼容的前端界面能力</li>
+                    <li>熟练掌握 Vue.js 框架全家桶（Vue Router、Pinia），能使用 Vite 快速搭建工程化项目，实现模块化开发、代码拆分与性能优化；熟悉 Element UI、Ant
+                        Design 等主流 UI 组件库</li>
+                    <li>熟悉 Node.js 运行环境，具备使用 Node.js 进行后端开发、接口联调及中间层服务搭建的能力</li>
+                    <li>深入理解计算机网络原理，熟悉 TCP/IP 协议栈、HTTP/HTTPS 协议，能熟练分析 HTTP 常见状态码（如 200、301、404、500 等），定位和解决网络请求异常问题</li>
+                    <li>对浏览器渲染原理，性能优化有一定了解</li>
                 </ul>
-            </div>
-
-            <div class="skill-card">
-                <h4>JavaScript</h4>
-                <ul>
-                    <li>掌握ES6+语法及核心概念</li>
-                    <li>熟悉DOM操作与事件处理机制</li>
-                    <li>了解原型链与面向对象编程</li>
-                </ul>
-            </div>
-
-            <div class="skill-card">
-                <h4>Vue生态</h4>
-                <ul>
-                    <li>熟悉Vue3组合式API开发</li>
-                    <li>掌握Vue Router/Pinia状态管理</li>
-                    <li>了解Vite构建工具配置</li>
-                </ul>
-            </div>
-
-            <div class="skill-card">
-                <h4>工具</h3>
-                    <ul>
-                        <li>熟悉Git+GitHub版本控制</li>
-                        <li>掌握npm、pnpm等包管理工具</li>
-                        <li>了解Vite等构建工具</li>
-                        <li>代码遵循ESLint规范</li>
-                    </ul>
             </div>
         </div>
     </section>
@@ -197,25 +189,23 @@
     <section>
         <h3 class="section-title">项目经历</h3>
         <div class="project-item">
-            <h4>VitePress技术博客系统（2025.1-至今）</h4>
-            <ul>
-                <li>基于VitePress + Vue3构建技术博客</li>
-                <li>实现Markdown与Vue组件混合开发</li>
-                <li>配置GitHub Actions自动化部署到vercel</li>
-                <li>开发自定义主题组件，实现文章统计与标签分类系统</li>
-                <li>集成Giscus评论系统，支持GitHub账号登录互动</li>
-            </ul>
+            <h4>使用VUE3和TailwindCSS构建天气应用（独立开发）</h4>
+            <div class="project-content">
+                <li>项目描述：基于 Vue3 与 Tailwind CSS 技术，通过调用第三方天气 API 实现数据实时更新，并结合响应式设计与性能优化策略，提供流畅的使用体验。</li>
+                <li>技术栈：Vue3+Tailwind CSS</li>
+                <li>项目实现：
+                </li>
+            </div>
         </div>
 
         <div class="project-item">
-            <h4>Vue3 网页照片墙应用（2025.03-至今）</h4>
-            <ul>
-                <li>采用Vue3 + nodejs +mysql技术栈</li>
-                <li>实现用户照片上传、留言及内容管理功能</li>
-                <li>集成axios处理REST API请求</li>
-                <li>使用Vite进行项目构建和打包优化</li>
-                <li>实现响应式布局适配多端设备</li>
-            </ul>
+            <h4>Vue3简易后台管理系统项目（核心成员）</h4>
+            <div class="project-content">
+                <li>项目描述：基于 Vue3 生态技术栈独立开发后台管理系统，以灵活交互与动态展示为核心，实现多场景业务功能，在实践中深化对前端框架及相关技术的理解与应用。</li>
+                <li>技术栈：Vue3+TypeScript+Pinia+ElementUI+ECharts</li>
+                <li>项目实现：说明职责，说明用处，说明亮点</li>
+            </div>
+
         </div>
     </section>
 </body>
